@@ -1,0 +1,17 @@
+﻿@model DemoWebApplication.Models.Student
+
+@{
+    ViewData["Title"] = "GetTotalStudents";
+}
+
+<h1>GetTotalStudents</h1>
+
+<div>
+    <h4>Student</h4>
+    <label> Total Students: </label> @ViewBag.TotalStudents
+    </dl>
+</div>
+<div>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    <a asp-action="Index">Back to List</a>
+</div>

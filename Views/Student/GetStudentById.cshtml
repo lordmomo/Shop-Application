@@ -1,0 +1,80 @@
+﻿@model DemoWebApplication.Models.Student
+
+@{
+    ViewData["Title"] = "GetStudentById";
+}
+
+<h1>GetStudentById</h1>
+
+<div>
+    <h4>Student</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.StudentId)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.StudentId)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.StudentName)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.StudentName)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Age)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Age)
+        </dd>
+        </dt>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.StudentEmail)
+        </dt>
+        <dd class="col-sm-10">
+            <custom-email my-email="@Model.StudentEmail"></custom-email>
+        </dd>
+       
+
+    </dl>
+</div>
+<div>
+    <h2> Student from Html helpers</h2>
+    <h3>
+        <h2>Student Name</h2>
+        @Html.TextBoxFor(s => s.StudentName, new { @class = "form-control" })
+    </h3>
+    <h3>
+        <h2>Student Description</h2>
+        @Html.TextAreaFor( m => m.Age)
+    </h3>
+
+    <h3>
+        <h2>Gender dropdown</h2>
+        @Html.DropDownListFor(m => m.StudentGender,
+        new SelectList(Enum.GetValues(typeof(Gender))),
+        "Select Gender")
+
+    </h3>
+
+
+    <h3>
+        <h2>Hidden Field</h2>
+        @Html.HiddenFor(m => m.StudentId)
+
+    </h3>
+
+    <h3>
+        <h2>Age </h2>
+        @Html.PasswordFor(m => m.Age)
+
+    </h3>
+
+
+
+</div>
+<div>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    <a asp-action="Index">Back to List</a>
+</div>

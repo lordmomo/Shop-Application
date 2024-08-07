@@ -1,0 +1,33 @@
+﻿@model DemoWebApplication.Models.Person
+
+@{
+    ViewData["Title"] = "EditUserDetails";
+}
+
+<h1>Edit Details</h1>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="EditUserDetails">
+            <div asp-validation-summary="All" class="text-danger"></div>
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="CustomerName" class="control-label"> Enter new name</label>
+                <input asp-for="CustomerName" class="form-control" />
+                <span asp-validation-for="CustomerName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Address" class="control-label"> Enter new Address</label>
+                <input asp-for="Address" class="form-control" />
+                <span asp-validation-for="Address" class="text-danger"></span>
+            </div>
+            
+            <div class="form-group">
+                <button type="submit" value="Create" class="btn btn-primary">Save</button>
+                <button type="button" onclick="history.back()" class="btn btn-secondary">Cancel</button>
+            </div>
+
+        </form>
+    </div>
+</div>

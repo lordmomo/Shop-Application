@@ -1,0 +1,87 @@
+﻿@model DemoWebApplication.Models.ShoppingCart
+
+@{
+    ViewData["Title"] = "ShowItemsInCart";
+}
+
+<h1>ShowItemsInCart</h1>
+
+@if (TempData["Message"] != null)
+{
+    <div class="alert alert-success" role="alert">
+        @TempData["Message"]
+    </div>
+}
+
+
+
+@if (Model.CartItems.Any())
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Product Name</th>
+                <th>Description</th>
+                <th>Price</th>
+                <th> Click to Remove</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.CartItems)
+            {
+                <tr>
+                    <td>@item.ProductName</td>
+                    <td>@item.ProductDescription</td>
+                    <td>@item.ProductPrice</td>
+                    <td>
+                        <form asp-controller="Shop" asp-action="RemoveItemsInCart" method="post">
+                            <input type="hidden" name="productId" value="@item.ProductId" />
+                            <input type="hidden" name="username" value=" @ViewBag.Username"/>
+                            <button type="submit" id= "remove-item" class="btn btn-danger">Remove</button>
+                        </form>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <div>
+        <form asp-controller="Shop" asp-action="ShowBill" method="post">
+            <button type="submit" class="btn btn-primary">Checkout</button>
+            <input type="hidden" name="username" value=" @ViewBag.Username" />
+        </form>
+
+        <form asp-controller="Shop" asp-action="Index">
+            <button type="submit" class="btn back-btn-custom">Return</button>
+        </form>
+    </div>
+    
+
+}
+else
+{
+    <p>No items in the cart.</p>
+    <form asp-controller="Shop" asp-action="Index">
+        <button type="submit" class="btn back-btn-custom">Return</button>
+    </form>
+}
+
+<script>
+    $(document).ready(function () {
+        $("#remove-item").click(function () {
+            var form = $(this).closest("form");
+            var productId = form.find("input[name='productId']").val();
+            var username = form.find("input[name='username']").val();
+
+            $.ajax({
+                url: "/Shop/RemoveItemsInCart",
+                method: "POST",
+                data: { productId: productId, username: username },
+                success: function () {
+                    $.get("/Shop/ShowItemsInCart", function (data) {
+                        $("#cart-items").html(data);
+                    });
+                }
+            });
+        });
+    });
+</script>

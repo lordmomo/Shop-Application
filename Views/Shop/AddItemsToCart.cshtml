@@ -1,0 +1,49 @@
+﻿@model DemoWebApplication.Models.ItemsAndCartViewModel
+
+@{
+    ViewData["Title"] = "All Items in Shop";
+}
+
+<h1>All Items in Shop</h1>
+
+@if (TempData["Message"] != null)
+{
+    <div class="alert alert-success" role="alert">
+        @TempData["Message"]
+    </div>
+}
+
+<div class="row">
+    @foreach (var item in Model.Items)
+    {
+        <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">@item.ProductName</h5>
+                    <p class="card-text">@item.ProductDescription</p>
+                    <p class="card-text">Price: Rs. @item.ProductPrice</p>
+                    <p class="card-text">Quantity: @item.ProductQty</p>
+                    <form asp-controller="Shop" asp-action="AddItemsToCart" method="post">
+                        <input type="hidden" name="productId" value="@item.ProductId" />
+                        <button type="submit" class="btn btn-primary">Add to Cart</button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+<div>
+    <form asp-controller="Shop" asp-action="ShowBill" method="post">
+        <button type="submit" class="btn btn-primary">Checkout</button>
+        <input type="hidden" name="username" value=" @ViewBag.Username" />
+    </form>
+
+    <button type="button" class="btn back-btn-custom">
+        <a asp-action="Index" asp-controller="Shop" asp-route-username="@ViewBag.Username" class="options">Return</a>
+    </button>
+
+</div>
+
+

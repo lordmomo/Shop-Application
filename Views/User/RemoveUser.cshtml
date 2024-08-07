@@ -1,0 +1,17 @@
+﻿@model DemoWebApplication.Models.Person
+
+@{
+    ViewData["Title"] = "RemoveUser";
+}
+
+<h1>User Deletion</h1>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    
+    <form asp-action="RemoveUser">
+        <button type="submit" value="Delete" class="btn btn-danger" > Delete</button>
+
+        <button type="button" onclick="history.back()" class="btn btn-primary">Cancel</button>
+    </form>
+</div>

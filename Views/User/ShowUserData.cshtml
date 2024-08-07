@@ -1,0 +1,70 @@
+﻿@model DemoWebApplication.Models.Person
+
+@{
+    ViewData["Title"] = "ShowUserData";
+}
+@section Stylesheets {
+    <link rel="stylesheet" href="~/css/login.css" type="text/css" />
+}
+
+<h1>ShowUserData</h1>
+
+<div>
+    <h4>Welcome @Model.CustomerName</h4>
+    <hr />
+    <div>
+        <dl class="row">
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.CustomerName)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.CustomerName)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Address)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Address)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.UserName)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.UserName)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Password)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Password)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Balance)
+            </dt>
+            <dd class="col-sm-10">
+                Rs. @Html.DisplayFor(model => model.Balance)
+            </dd>
+        </dl>
+
+        @if (!string.IsNullOrEmpty(ViewBag.ImageDataURL))
+        {
+            <div class="profile-picture-container">
+                <img src="@ViewBag.ImageDataURL" alt="User Image" class="profile-picture" />
+            </div>
+        }
+    </div>
+
+</div>
+
+<p>What would you like to perform?</p>
+
+<div class="options-grid">
+    <a id="editUserDetailsBtn" asp-action="EditUserDetails" asp-controller="User" asp-route-username="@Model.UserName" method="get" class="option">Edit user details</a>
+    <a id="changePasswordBtn" asp-action="EditPassword" asp-controller="User" asp-route-username="@Model.UserName" method="get" class="option">Change password</a>
+    <a id="changeUserProfilePictureBtn" asp-action="AddProfilePicture" asp-controller="User" asp-route-username="@Model.UserName" method="get" class="option">Change profile picture</a>
+    <a id="viewAllUsersBtn" asp-action="ViewAllUsers" asp-controller="User" method="get" class="option">View all users</a>
+    <a id="removeUserBtn" asp-action="RemoveUser" asp-controller="User" asp-route-username="@Model.UserName" method="get" class="option">Delete user</a>
+    <a id="shopBtn" asp-action="Index" asp-controller="Shop" asp-route-username="@Model.UserName" method="get" class="option">Shop</a>
+    <a id="logoutBtn" asp-action="Index" asp-controller="Login" method="get" class="option">Logout</a>
+    <a id="goToJokeBtn" asp-action="GoToJoke" asp-controller="User" method="get" class="option"> Go to joke</a>
+</div>

@@ -1,0 +1,159 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = DemoWebApplication
+build_property.RootNamespace = DemoWebApplication
+build_property.ProjectDir = C:\Users\i44375\Documents\tsProject\finishedProject\DemoWebApplication\DemoWebApplication\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\i44375\Documents\tsProject\finishedProject\DemoWebApplication\DemoWebApplication
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/i44375/Documents/tsProject/finishedProject/DemoWebApplication/DemoWebApplication/Views/Admin/CreateRole.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQ3JlYXRlUm9sZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/i44375/Documents/tsProject/finishedProject/DemoWebApplication/DemoWebApplication/Views/Admin/EditRole.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRWRpdFJvbGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/i44375/Documents/tsProject/finishedProject/DemoWebApplication/DemoWebApplication/Views/Admin/EditUsersInRole.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRWRpdFVzZXJzSW5Sb2xlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/i44375/Documents/tsProject/finishedProject/DemoWebApplication/DemoWebApplication/Views/Admin/ListRoles.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTGlzdFJvbGVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/i44375/Documents/tsProject/finishedProject/DemoWebApplication/DemoWebApplication/Views/Analytics/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5hbHl0aWNzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/i44375/Documents/tsProject/finishedProject/DemoWebApplication/DemoWebApplication/Views/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/i44375/Documents/tsProject/finishedProject/DemoWebApplication/DemoWebApplication/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/i44375/Documents/tsProject/finishedProject/DemoWebApplication/DemoWebApplication/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/i44375/Documents/tsProject/finishedProject/DemoWebApplication/DemoWebApplication/Views/Login/AccessDenied.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cQWNjZXNzRGVuaWVkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/i44375/Documents/tsProject/finishedProject/DemoWebApplication/DemoWebApplication/Views/Login/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/i44375/Documents/tsProject/finishedProject/DemoWebApplication/DemoWebApplication/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/i44375/Documents/tsProject/finishedProject/DemoWebApplication/DemoWebApplication/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/i44375/Documents/tsProject/finishedProject/DemoWebApplication/DemoWebApplication/Views/Shop/AddItemsInShop.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hvcFxBZGRJdGVtc0luU2hvcC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/i44375/Documents/tsProject/finishedProject/DemoWebApplication/DemoWebApplication/Views/Shop/AddItemsToCart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hvcFxBZGRJdGVtc1RvQ2FydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/i44375/Documents/tsProject/finishedProject/DemoWebApplication/DemoWebApplication/Views/Shop/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hvcFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/i44375/Documents/tsProject/finishedProject/DemoWebApplication/DemoWebApplication/Views/Shop/RemoveItemsInShop.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hvcFxSZW1vdmVJdGVtc0luU2hvcC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/i44375/Documents/tsProject/finishedProject/DemoWebApplication/DemoWebApplication/Views/Shop/ShowAllItemsInShop.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hvcFxTaG93QWxsSXRlbXNJblNob3AuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/i44375/Documents/tsProject/finishedProject/DemoWebApplication/DemoWebApplication/Views/Shop/ShowBill.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hvcFxTaG93QmlsbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/i44375/Documents/tsProject/finishedProject/DemoWebApplication/DemoWebApplication/Views/Shop/ShowItemsInCart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hvcFxTaG93SXRlbXNJbkNhcnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/i44375/Documents/tsProject/finishedProject/DemoWebApplication/DemoWebApplication/Views/Shop/UpdateItemsInShop.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hvcFxVcGRhdGVJdGVtc0luU2hvcC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/i44375/Documents/tsProject/finishedProject/DemoWebApplication/DemoWebApplication/Views/Student/GetStudentById.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudFxHZXRTdHVkZW50QnlJZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/i44375/Documents/tsProject/finishedProject/DemoWebApplication/DemoWebApplication/Views/Student/GetTotalStudents.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudFxHZXRUb3RhbFN0dWRlbnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/i44375/Documents/tsProject/finishedProject/DemoWebApplication/DemoWebApplication/Views/Student/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/i44375/Documents/tsProject/finishedProject/DemoWebApplication/DemoWebApplication/Views/User/AddProfilePicture.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxBZGRQcm9maWxlUGljdHVyZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/i44375/Documents/tsProject/finishedProject/DemoWebApplication/DemoWebApplication/Views/User/EditPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxFZGl0UGFzc3dvcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/i44375/Documents/tsProject/finishedProject/DemoWebApplication/DemoWebApplication/Views/User/EditUserDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxFZGl0VXNlckRldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/i44375/Documents/tsProject/finishedProject/DemoWebApplication/DemoWebApplication/Views/User/RegisterUserForm.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxSZWdpc3RlclVzZXJGb3JtLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/i44375/Documents/tsProject/finishedProject/DemoWebApplication/DemoWebApplication/Views/User/RemoveUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxSZW1vdmVVc2VyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/i44375/Documents/tsProject/finishedProject/DemoWebApplication/DemoWebApplication/Views/User/ShowUserData.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxTaG93VXNlckRhdGEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/i44375/Documents/tsProject/finishedProject/DemoWebApplication/DemoWebApplication/Views/User/ViewAllUsers.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxWaWV3QWxsVXNlcnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/i44375/Documents/tsProject/finishedProject/DemoWebApplication/DemoWebApplication/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/i44375/Documents/tsProject/finishedProject/DemoWebApplication/DemoWebApplication/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/i44375/Documents/tsProject/finishedProject/DemoWebApplication/DemoWebApplication/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-sm3w1cp304

@@ -1,0 +1,78 @@
+﻿@model IEnumerable<DemoWebApplication.Models.Item>
+@{
+    ViewData["Title"] = "ShowAllItemsInShop";
+}
+
+<h1>Items In Shop</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ProductId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ProductName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ProductDescription)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ProductPrice)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ProductQty)
+            </th>
+            @if (Context.User.IsInRole("Admin"))
+            {
+                <th>
+                    Action
+                </th>
+            }
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ProductId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ProductName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ProductDescription)
+                </td>
+                <td>
+                    Rs. @Html.DisplayFor(modelItem => item.ProductPrice)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ProductQty)
+                </td>
+                @if (User.IsInRole("Admin"))
+                {
+                    <td>
+                        <form asp-action="RemoveItemsInShop" asp-controller="Shop" asp-route-username="@ViewBag.Username" method="post">
+                        <input type="hidden" name="productId" value="@item.ProductId" />
+                        <button type="submit"  class="btn btn-primary">Remove</button>
+                    </form>
+
+                    <form asp-action="UpdateItemsInShop" asp-controller="Shop" asp-route-username="@ViewBag.Username" method="get">
+                        <input type="hidden" name="productId" value="@item.ProductId"/>
+                        <button type="submit"  class="btn btn-primary">Update</button>
+                    </form>
+                </td>
+                }
+            </tr>
+        }
+    </tbody>
+</table>
+@if (Context.User.IsInRole("Admin"))
+{
+    <form asp-action="AddItemsInShop" asp-controller="Shop" asp-route-username="@ViewBag.Username" method="get">
+        <button type="submit" class="btn btn-primary">Add Item</button>
+    </form>
+}
+<button type="button" onClick="history.back()" class="btn btn-secondary">Back</button>

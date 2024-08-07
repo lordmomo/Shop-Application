@@ -1,0 +1,24 @@
+﻿@model DemoWebApplication.Models.Person
+@{
+    ViewData["Title"] = "Index";
+}
+@section Stylesheets {
+    <link rel="stylesheet" href="~/css/login.css" type="text/css" />
+}
+
+<h1>Shop </h1>
+
+
+<p>What would you like to perform?</p>
+
+<div class="options-grid">
+    <a asp-action="ShowAllItemsInShop" asp-controller="Shop" asp-route-username="@Model.UserName" method="get" class="option">Display all items in shop</a>
+    <a asp-action="AddItemsToCart" asp-controller="Shop" asp-route-username="@Model.UserName" method="get" class="option">Add items in cart</a>
+    <a asp-action="ShowItemsInCart" asp-controller="Shop" asp-route-username="@Model.UserName" method="get" class="option">Show items in cart</a>
+    @if (Context.User.IsInRole("Admin"))
+    {
+        <a asp-action="ListRoles" asp-controller="Admin" method="get" class="option">View all roles</a>
+    }
+    <a asp-action="ShowUserData" asp-controller="User" asp-route-username="@Model.UserName" method="get" class="option">Back to user profile</a>
+
+</div>
